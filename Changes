@@ -1,5 +1,10 @@
 Revision history for Perl extension Mollie::Micropayment.
 
+0.04  Thu Feb 25 00:00:00 2010
+	- Now using Module::Install
+	- Deprecated method printenv(). It now issues a warning.
+	- Required perl version set to 5.8.8
+
 0.03  Tue Sep 04 21:30:00 2007
 	- It seemed that some people couldn't install the previous 
 versions. So here is a new one, build under Linux.

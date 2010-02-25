@@ -1,12 +1,29 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Mollie-Micropayment
-version:      0.03
-version_from: lib/Mollie/Micropayment.pm
-installdirs:  site
-requires:
-    LWP::Simple:                   0
-    XML::Simple:                   0
-
+---
+abstract: "Perl API for Mollie's Micropayment service"
+author:
+  - 'C. Kras, <c.kras@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30_01
+generated_by: 'Module::Install version 0.93'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Mollie-Micropayment
+no_index:
+  directory:
+    - inc
+    - scripts
+    - t
+requires:
+  LWP::Simple: 0
+  XML::Simple: 0
+  perl: 5.8.8
+resources:
+  bugtracker: http://github.com/Htbaa/mollie-micropayment/issues
+  license: http://dev.perl.org/licenses/
+  repository: http://github.com/Htbaa/mollie-micropayment
+version: 0.04

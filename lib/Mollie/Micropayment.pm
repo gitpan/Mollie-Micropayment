@@ -28,7 +28,7 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 
 ##################################################
@@ -68,6 +68,7 @@ sub new {
 ##################################################
 sub printenv {
 	my $self = shift;
+	warn __PACKAGE__ . '->printenv() has been deprecated and will be removed in the future!';
 	foreach my $key(sort(keys(%{$self}))) {
 		print $key . ": " . $self->{$key} . "\n";
 	}
@@ -311,10 +312,6 @@ The following methods can be used
 
 C<new> creates a new C<Mollie::Micropayment> object.
 
-=head3 printenv
-
-Use this for debugging. It contains the information returned by XML responses from Mollie.nl.
-
 =head3 partnerid
 
 Set and/or get your Mollie account ID.
@@ -403,10 +400,10 @@ C. Kras, E<lt>c.kras@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2007 by C. Kras
+Copyright (C) 2010 by C. Kras
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.7 or,
+it under the same terms as Perl itself, either Perl version 5.8.8 or,
 at your option, any later version of Perl 5 you may have available.
 
 
